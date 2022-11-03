@@ -22,17 +22,19 @@ pub fn create_detector(model_path: &str) -> Box<dyn Detector> {
     return detector;
 }
 
-pub fn detect_faces(detector: &mut dyn Detector, gray: &GrayImage) -> Vec<FaceInfo> {
+pub fn detect_faces(detector: &mut dyn Detector, gray: &GrayImage) -> (Vec<FaceInfo>, String) {
     let (width, height) = gray.dimensions();
     let mut image = ImageData::new(gray, width, height);
     let now = Instant::now();
     let faces = detector.detect(&mut image);
-    println!(
+
+    let msg: String = format!(
         "Found {} faces in {} ms",
         faces.len(),
         get_millis(now.elapsed())
     );
-    faces
+
+    (faces, msg)
 }
 
 fn get_millis(duration: Duration) -> u64 {

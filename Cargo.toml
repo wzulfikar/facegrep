@@ -9,6 +9,7 @@ edition = "2021"
 rustface = "0.1.7"
 image = "0.23"
 imageproc = "0.22.0"
+serde_json = "1.0.87"
 
 [profile.release]
 lto = true
