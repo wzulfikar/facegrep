@@ -57,7 +57,7 @@ fn main() {
     }
 
     // Save output file
-    let output_file = format!("{}-rustface.png", &image_path);
+    let output_file = format!("{}-facegrep.png", &image_path);
     let result = match rgb.save(output_file.clone()) {
         Ok(_) => output_file,
         Err(message) => message.to_string(),
