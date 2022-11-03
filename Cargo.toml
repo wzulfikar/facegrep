@@ -1,0 +1,18 @@
+[package]
+name = "facegrep"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustface = "0.1.7"
+image = "0.23"
+imageproc = "0.22.0"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"
