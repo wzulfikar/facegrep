@@ -1,6 +1,6 @@
 <h2 align=center>facegrep</h2>
 
-I want to learn Rust and found about [Rustface](https://github.com/atomashpolskiy/rustface). It detects faces in a picture. But what interesting is it doesn't need external dependencies (eg. opencv). So I think it'll be a good practice.
+I want to learn Rust and found about [Rustface](https://github.com/atomashpolskiy/rustface) (which is a port of [C++ SeetaFace Engine](https://github.com/seetaface/SeetaFaceEngine)). It detects faces in a picture. What interesting is it doesn't need external dependencies (eg. opencv). So I think it'll be a good practice.
 
 ## Goal
 - [x] Use the [example code](https://github.com/atomashpolskiy/rustface/blob/master/examples/image_demo.rs) from rustface as base
