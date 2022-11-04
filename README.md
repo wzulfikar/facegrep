@@ -24,6 +24,8 @@ export RUSTFACE_MODEL=/tmp/seeta_fd_frontal_v1.0.bin
 cargo run assets/test/scientists.jpg
 ```
 
+If you use M1, you can try use the binary at `bin/facegrep-m1`. If you use Windows (Rust target x86_64-pc-windows-gnu), you can try use `bin/facegrep-win`.
+
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/7823011/199857370-6a684e28-5aed-414f-a461-6b1be6a0925a.png)
