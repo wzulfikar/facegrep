@@ -1,6 +1,8 @@
 <h2 align=center>facegrep</h2>
 
-I want to learn Rust and found about [Rustface](https://github.com/atomashpolskiy/rustface) (which is a port of [C++ SeetaFace Engine](https://github.com/seetaface/SeetaFaceEngine)). It detects faces in a picture. What interesting is it doesn't need external dependencies (eg. opencv). So I think it'll be a good practice.
+I want to learn Rust and found about [Rustface](https://github.com/atomashpolskiy/rustface) (which is a port of [C++ SeetaFace Engine](https://github.com/seetaface/SeetaFaceEngine)). It detects faces in a picture. What interesting is it doesn't need external dependencies (eg. opencv).
+
+I think it'll be a good exercise.
 
 ## Goal
 - [x] Use the [example code](https://github.com/atomashpolskiy/rustface/blob/master/examples/image_demo.rs) from rustface as base
@@ -27,7 +29,12 @@ cargo run assets/test/scientists.jpg
 cargo run assets/test/scientists.jpg --json
 ```
 
-If you use M1, you can try use the binary at `bin/facegrep-m1`. If you use Windows (Rust target x86_64-pc-windows-gnu), you can try use `bin/facegrep-win`.
+If you don't want to install Rust cargo:
+
+- for M1, try use the binary at `bin/facegrep-m1`
+- for Windows (Rust target x86_64-pc-windows-gnu), try use `bin/facegrep-win`
+
+You'll still need to download the model and expose its path as environment variable.
 
 ## Preview
 
