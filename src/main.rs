@@ -49,11 +49,13 @@ fn main() {
         let rect = Rect::at(bbox.x(), bbox.y()).of_size(bbox.width(), bbox.height());
         draw_hollow_rect_mut(&mut rgb, rect, Rgb([255, 0, 0]));
 
-        let face_json = json!({
-            "score": face.score(),
-            "bbox": json!({"x": bbox.x(), "y": bbox.y() })
-        });
-        faces_json.push(face_json.to_string());
+        if json_output {
+            let face_json = json!({
+                "score": face.score(),
+                "bbox": json!({"x": bbox.x(), "y": bbox.y() })
+            });
+            faces_json.push(face_json.to_string());
+        }
     }
 
     // Save output file
