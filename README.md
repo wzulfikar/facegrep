@@ -22,6 +22,9 @@ export RUSTFACE_MODEL=/tmp/seeta_fd_frontal_v1.0.bin
 
 # Run the binary with the test image
 cargo run assets/test/scientists.jpg
+
+# Use --json flag to show json output
+cargo run assets/test/scientists.jpg --json
 ```
 
 If you use M1, you can try use the binary at `bin/facegrep-m1`. If you use Windows (Rust target x86_64-pc-windows-gnu), you can try use `bin/facegrep-win`.
