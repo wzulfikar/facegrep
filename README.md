@@ -1,4 +1,4 @@
-<h2 align=center>facegrep</h2>
+<h1 align=center>facegrep</h2>
 
 I want to learn Rust and found about [Rustface](https://github.com/atomashpolskiy/rustface) (which is a port of [C++ SeetaFace Engine](https://github.com/seetaface/SeetaFaceEngine)). It detects faces in a picture. What interesting is it doesn't need external dependencies (eg. opencv).
 
