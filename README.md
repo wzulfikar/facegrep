@@ -11,6 +11,9 @@ I want to learn Rust and found about [Rustface](https://github.com/atomashpolski
 ## Usage
 
 ```sh
+# Clone repo
+git clone --depth 1 https://github.com/wzulfikar/facegrep
+
 # Download model from Rustface repo
 curl -L -O --output-dir /tmp https://github.com/atomashpolskiy/rustface/raw/master/model/seeta_fd_frontal_v1.0.bin
 
@@ -18,7 +21,7 @@ curl -L -O --output-dir /tmp https://github.com/atomashpolskiy/rustface/raw/mast
 export RUSTFACE_MODEL=/tmp/seeta_fd_frontal_v1.0.bin
 
 # Run the binary with the test image
-cargo run assets/test/scientist.jpg
+cargo run assets/test/scientists.jpg
 ```
 
 ## Preview
