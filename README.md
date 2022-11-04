@@ -40,6 +40,10 @@ You'll still need to download the model and expose its path as environment varia
 
 <p align=center><img width=900 src=https://user-images.githubusercontent.com/7823011/199857370-6a684e28-5aed-414f-a461-6b1be6a0925a.png /></p>
 
-## Notes
+<p align="center">▲▼▲</p>
+
+**Note to self:**
+
 - JSON should be properly handled instead of just string-concatenated ([main.rs#L57](https://github.com/wzulfikar/facegrep/blob/5d02d6c9a9eac9c78327e71e76fd9f116ccaf461/src/main.rs#L57), [L69](https://github.com/wzulfikar/facegrep/blob/5d02d6c9a9eac9c78327e71e76fd9f116ccaf461/src/main.rs#L69))
-- If we want to reuse the code in web, how difficult is it to port to wasm? Would there be performance penalty?
+- If I want to reuse the code in web, how difficult is it to port to wasm? Would there be performance penalty?
+- Took me 1 hour to put this together. How long will it take me to do similar thing after I learn more Rust?
